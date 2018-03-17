@@ -49,7 +49,7 @@ class PlaceChip {
     private static boolean setTurn(Context context) {
         final int random = new Random().nextInt(100);
         int turn = random % 2;
-        Log.e("turn", "turn: " + turn + "random: " + random);
+
         if (turn == 0) {
             return true;
         } else {
@@ -166,7 +166,7 @@ class PlaceChip {
         }
     }
 
-    static Player getCurrentPlayer() {
+    private static Player getCurrentPlayer() {
         if (mIsRedsTurn) {
             return mPlayers.getPlayer(0);
         } else {

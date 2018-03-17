@@ -28,11 +28,6 @@ public class AddPlayerFragment extends DialogFragment {
     TextView p1, p1Score, p2, p2Score;
 
     public static AddPlayerFragment newInstance() {
-        //Bundle args = new Bundle();
-
-       // AddPlayerFragment fragment = new AddPlayerFragment();
-        // fragment.setArguments(args);
-
         return new AddPlayerFragment();
     }
 
@@ -112,9 +107,7 @@ public class AddPlayerFragment extends DialogFragment {
     }
 
     public void updateNames() {
-        Log.e("UPDATENAMES", "UPDATE NAMES");
         if(mPlayers.getSize() > 0) {
-            Log.e("UPDATENAMES", "UPDATE NAMES SIZE > 2");
             p1.setText(mPlayers.getPlayer(0).getName());
             p2.setText(mPlayers.getPlayer(1).getName());
         }
