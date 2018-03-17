@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">ConnectThree</string>
+
+    <!-- Player List Strings -->
+
+    <!-- Game Over Dialog Strings -->
+    <string name="game_over_dialog_title">Game Over</string>
+    <string name="game_over_dialog_message">Game Over. %1$s</string>
+    <string name="game_over_winner_message">%1$s has won the game! Congratulations! Play again?</string>
+    <string name="game_over_no_more_moves"> There are no more available moves. Play again?</string>
+    <string name="game_over_dialog_positive_button">New Game</string>
+    <string name="game_over_dialog_negative_button">Quit</string>
+
+    <!-- Add User Dialog Strings -->
+    <string name="add_user_dialog_title">Players</string>
+    <string name="add_user_dialog_message">Enter Name:</string>
+    <string name="add_user_edittext_player1_hint">Player 1</string>
+    <string name="add_user_edittext_player2_hint">Player 2</string>
+
+    <!-- Game Board Strings -->
+    <string name="score_board_title">Score</string>
+    <string name="player_1">%1$s</string>
+    <string name="player_2">%1$s</string>
+    <string name="player_1_score">0</string>
+    <string name="player_2_score">0</string>
+</resources>
