@@ -13,7 +13,7 @@
 
     <!-- Add User Dialog Strings -->
     <string name="add_user_dialog_title">Players</string>
-    <string name="add_user_dialog_message">Enter Name:</string>
+    <string name="add_user_dialog_message">Enter Player Names:</string>
     <string name="add_user_edittext_player1_hint">Player 1</string>
     <string name="add_user_edittext_player2_hint">Player 2</string>
 

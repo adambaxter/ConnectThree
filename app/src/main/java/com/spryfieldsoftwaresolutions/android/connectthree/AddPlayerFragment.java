@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
@@ -81,8 +82,13 @@ public class AddPlayerFragment extends DialogFragment {
             }
         });
 
-        return new AlertDialog.Builder(getActivity()).setTitle(R.string.add_user_dialog_title)
-                .setMessage(R.string.add_user_dialog_message)
+        TextView title = new TextView(getContext());
+        title.setText(R.string.add_user_dialog_title);
+        title.setGravity(Gravity.CENTER);
+        title.setTextSize(24);
+        title.setPadding(10,10,10,10);
+
+        return new AlertDialog.Builder(getActivity()).setCustomTitle(title)
                 .setView(dialogView)
                 .setCancelable(false)
                 .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
