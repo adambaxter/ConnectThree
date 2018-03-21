@@ -57,7 +57,7 @@ class PlaceChip {
         }
     }
 
-    static void setTurnIndicator(Context context) {
+    private static void setTurnIndicator(Context context) {
         ImageView turnIndicator1, turnIndicator2;
         if (mIsRedsTurn) {
             turnIndicator1 = ((Activity) context).findViewById(R.id.scoreboard_player1_indicator);
